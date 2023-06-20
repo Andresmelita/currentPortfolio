@@ -34,8 +34,28 @@ body {
     -moz-text-fill-color: transparent;
   }
 
-  .animate__fadeInLeftBig {
+  .logo {
     --animate-duration: 3s;
+  }
+
+  .menu {
+    --animate-duration: 6s;
+  }
+
+  .name {
+    --animate-duration: 3s;
+  }
+
+  .presentation {
+    --animate-duration: 4s;
+  }
+
+  .social-icons {
+    --animate-duration: 6s;
+  }
+
+  .compass {
+    --animate-duration: 6s;
   }
 
   .polygon {

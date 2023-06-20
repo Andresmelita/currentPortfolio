@@ -1,5 +1,6 @@
 import React from "react";
-import background from "../assets/images/09.jpg";
+import background from "../assets/images/mountain.jpg";
+import compass from "../assets/images/compass.png";
 import Image from "next/image";
 import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
 import 'animate.css';
@@ -21,10 +22,18 @@ const HomePage = () => {
         {/* <div className="absolute h-[100%] w-[100%] bg-[#00000049] polygon"></div> */}
         <div className="h-[100%] w-[100%] flex flex-row p-3 justify-center bg-[#00000036]">
           <div className="my-presentation w-[50%] flex">
-            <div className="flex justify-center flex-col text-[#000000cc] h-[90%] px-28">
-              <div className="name animate__animated animate__fadeInLeftBig">Andrés Salazar Melita</div>
-              <div className="pb-[24px] text-[28px] font-semibold">I am Developer / FullStack</div>
-              <div className="flex flex-wrap gap-4">
+            <div className="flex justify-center flex-col text-[#fff] h-[100%] px-28 w-[100%]">
+              <div className="name w-[100%] flex justify-start animate__animated animate__fadeInLeftBig">
+                <p>
+                  Andrés Salazar Melita
+                </p>
+              </div>
+              <div className="presentation animate__animated animate__fadeInLeftBig pb-[24px] text-[28px] font-semibold">
+                <p>
+                  I am Developer / FullStack
+                </p>
+              </div>
+              <div className="social-icons animate__animated animate__fadeIn flex flex-wrap gap-4">
                 <div className="linkedin text-[32px]">
                   <BsLinkedin></BsLinkedin>
                 </div>
@@ -37,10 +46,16 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%]"></div>
+          <div className="w-[50%] relative">
+            <Image
+            src={compass}
+            alt=""
+            className="compass absolute bottom-[180px] animate__fadeIn animate__animated"
+          ></Image>
+          </div>
         </div>
       </div>
-      {/* <div className="custom-shape-divider-bottom-1687101961">
+      {/* <div className="custom-shape-divider-bottom-1687101961 -pt-[100px]">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
