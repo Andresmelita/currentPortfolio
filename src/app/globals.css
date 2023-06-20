@@ -1,8 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
 @tailwind base;
+body {
+  font-family: "Tajawal", sans-serif;
+}
+
 @tailwind components;
 @tailwind utilities;
 
-:root {
+@layer components {
+  .scrolling {
+    transition: all 0.6s ease;
+  }
+
+  .name {
+    font-weight: bold;
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(
+      45deg,
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255),
+      rgb(255, 255, 255)
+    );
+    background-clip: text;
+    filter: drop-shadow(1.5px 1.5px 1px #000);
+    background-repeat: repeat;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+  }
+
+  .animate__fadeInLeftBig {
+    --animate-duration: 3s;
+  }
+
+  .polygon {
+    clip-path: polygon(0 0, 40% 0, 80% 100%, 0 100%);
+  }
+
+/*
+  .custom-shape-divider-bottom-1687101961 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .custom-shape-divider-bottom-1687101961 svg {
+    position: relative;
+    display: block;
+    width: calc(161% + 1.3px);
+    height: 263px;
+  }
+
+  .custom-shape-divider-bottom-1687101961 .shape-fill {
+    fill: #ffffff;
+  }*/
+
+
+  .logo {
+    transform: rotate(0deg);
+    animation-name: toTurn;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  } 
+
+  @keyframes toTurn {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  html::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  html::-webkit-scrollbar-thumb {
+    background-color: rgb(18, 69, 117);
+    border-radius: 1px;
+  }
+
+  html::-webkit-scrollbar-track {
+    background-color: #00141d;
+  }
+}
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -24,4 +121,4 @@ body {
       rgb(var(--background-end-rgb))
     )
     rgb(var(--background-start-rgb));
-}
+} */
