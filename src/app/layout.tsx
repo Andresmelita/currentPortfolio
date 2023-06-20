@@ -1,6 +1,8 @@
 import Navigation from '@/components/Navigation'
+import background from "../assets/images/mountain.jpg";
 import './globals.css'
 import { Inter } from 'next/font/google'
+import Image from 'next/image'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,8 +18,18 @@ export default function RootLayout({
 }) {
   return (
     <html className='container-layout h-full' lang="en">
-        <Navigation/>
-        {children}
+      <div className='bg-[#00000036]'>
+        <Image
+            src={background}
+            alt=""
+            objectFit="cover"
+            layout="fill"
+            className="absolute -z-20"
+          >  
+        </Image>
+      </div>
+      <Navigation/>
+      {children}
     </html>
   )
 }
