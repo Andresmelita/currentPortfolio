@@ -2,13 +2,13 @@ import React from "react";
 import compass from "../assets/images/compass.png";
 import react from '../assets/images/React.png'
 import background from '../assets/images/mountain.jpg'
-import Image from "next/image";
+import Image from "next/legacy/image";
 import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div>
-              <Image
+    <div className="relative">
+        <Image
           src={background}
           alt=""
           objectFit="cover"
@@ -50,19 +50,19 @@ export default function Home() {
           <div className="w-[50%] relative">
             <div className=" absolute w-[660px] h-[660px] bottom-[180px] align-middle flex flex-wrap">
               <div className="w-[220px] h-[220px]">
-                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+                <Image src={react} alt="" width={100} height={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
               </div>
               <div className="border-[#ffbdbd7a] border-[2px] w-[220px] h-[220px]">
-                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+                <Image src={react} alt="" width={100} height={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
               </div>
               <div className="border-[#ffffff7a] w-[220px] h-[220px]">
-                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+                <Image src={react} alt="" width={100} height={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
               </div>
               <div className="border-[#ffbdbd7a] w-[220px] h-[220px]">
-                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+                <Image src={react} alt="" width={100} height={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
               </div>
               <div className="border-[#ffffff7a] w-[220px] h-[220px]">
-                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+                <Image src={react} alt="" width={100} height={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
               </div>
               <div className="border-[#ffbdbd7a] w-[220px] h-[220px]"></div>
               <div className="border-[#ffffff7a] w-[220px] h-[220px]"></div>
@@ -71,6 +71,7 @@ export default function Home() {
             </div>
             <Image
               src={compass}
+              priority
               alt=""
               width={660}
               className="compass absolute bottom-[180px] animate__fadeIn animate__animated"
