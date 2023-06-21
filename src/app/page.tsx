@@ -1,15 +1,21 @@
 import React from "react";
 import compass from "../assets/images/compass.png";
-import { useEffect, useState } from 'react';
+import react from '../assets/images/React.png'
+import background from '../assets/images/mountain.jpg'
 import Image from "next/image";
 import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
-
-import 'animate.css';
-import Loading from "@/components/Loading/Loading";
 
 export default function Home() {
   return (
     <div>
+              <Image
+          src={background}
+          alt=""
+          objectFit="cover"
+          layout="fill"
+          className="absolute -z-20"
+        >
+        </Image>
       <div
         id="home"
         className="relative h-[100vh] flex justify-center items-center"
@@ -41,24 +47,34 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="w-[50%] relative bg-[#0000006c]">
-            <div className=" absolute w-[660px] h-[660px] bottom-[180px] bg-[#000000b2] align-middle flex flex-wrap">
-              <div className="bg-[#ffffff7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffbdbd7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffffff7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffbdbd7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffffff7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffbdbd7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffffff7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffbdbd7a] w-[220px] h-[220px]"></div>
-              <div className="bg-[#ffffff7a] w-[220px] h-[220px]"></div>
+          <div className="w-[50%] relative">
+            <div className=" absolute w-[660px] h-[660px] bottom-[180px] align-middle flex flex-wrap">
+              <div className="w-[220px] h-[220px]">
+                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+              </div>
+              <div className="border-[#ffbdbd7a] border-[2px] w-[220px] h-[220px]">
+                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+              </div>
+              <div className="border-[#ffffff7a] w-[220px] h-[220px]">
+                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+              </div>
+              <div className="border-[#ffbdbd7a] w-[220px] h-[220px]">
+                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+              </div>
+              <div className="border-[#ffffff7a] w-[220px] h-[220px]">
+                <Image src={react} alt="" width={100} className="rounded-[20px] border-[1px] border-[#fff]"></Image>
+              </div>
+              <div className="border-[#ffbdbd7a] w-[220px] h-[220px]"></div>
+              <div className="border-[#ffffff7a] w-[220px] h-[220px]"></div>
+              <div className="border-[#ffbdbd7a] w-[220px] h-[220px]"></div>
+              <div className="border-[#ffffff7a] w-[220px] h-[220px]"></div>
             </div>
             <Image
-            src={compass}
-            alt=""
-            width={660}
-            className="compass absolute bottom-[180px] animate__fadeIn animate__animated"
-          ></Image>
+              src={compass}
+              alt=""
+              width={660}
+              className="compass absolute bottom-[180px] animate__fadeIn animate__animated"
+            ></Image>
           </div>
         </div>
       </div>
