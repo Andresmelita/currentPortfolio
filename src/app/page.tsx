@@ -7,7 +7,7 @@ import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
 
 export default function Home() {
   return (
-    <div className="relative">
+    <div className="relative w-[100vw] h-[100vh]">
         <Image
           src={background}
           alt=""

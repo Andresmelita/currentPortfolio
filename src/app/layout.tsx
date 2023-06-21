@@ -37,7 +37,7 @@ export default function RootLayout({
 }) {
   return (
     <html className='' lang="en">
-      <body className="container-layout h-full">
+      <body>
         <header>
           <Navigation />
         </header>
