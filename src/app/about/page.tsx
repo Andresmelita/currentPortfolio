@@ -10,9 +10,16 @@ const page = () => {
         alt=""
         objectFit="cover"
         layout="fill"
-        className="absolute -z-20"
+        className="absolute -z-20 brightness-[0.75]" 
       >
       </Image>
+      <div
+        id="home"
+        className="relative h-[100vh] flex justify-center items-center"
+      >
+        <div className="w-[50%] bg-slate-200">Apartado A</div>
+        <div className="w-[50%] bg-black">Apartado B</div>
+      </div>
     </div>
   )
 }
