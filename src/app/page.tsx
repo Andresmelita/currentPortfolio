@@ -54,7 +54,7 @@ export default function Home() {
           </div>
           <div className="w-[50%] relative">
             <div className="w-[660px] h-[660px] absolute bottom-[110px] align-middle flex flex-wrap">
-              <div className="w-[220px] h-[220px] flex justify-start items-start animate-pulse">
+              {/* <div className="w-[220px] h-[220px] flex justify-start items-start animate-pulse">
                 <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
                   <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
@@ -98,7 +98,7 @@ export default function Home() {
               <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
                   <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div className="absolute bottom-[110px]">
               <Image
