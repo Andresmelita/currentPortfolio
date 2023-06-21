@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
 
 @tailwind base;
-  * {
-    scroll-behavior: smooth;
-  }
-  body {
-    font-family: "Tajawal", sans-serif;
-  }
+* {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Tajawal", sans-serif;
+}
 
 @tailwind components;
 @tailwind utilities;
@@ -17,11 +17,6 @@
   }
 
   .name {
-    font-weight: bold;
-    font-size: 64px;
-    justify-content: center;
-    align-items: center;
-    --animate-duration: 3s;
     background-image: linear-gradient(
       45deg,
       rgb(255, 255, 255),
@@ -30,7 +25,6 @@
       rgb(255, 255, 255)
     );
     background-clip: text;
-    filter: drop-shadow(1.5px 1.5px 1px #000);
     background-repeat: repeat;
     -webkit-background-clip: text;
     -moz-background-clip: text;
@@ -40,6 +34,10 @@
 
   .shadow-text {
     filter: drop-shadow(1.5px 1.5px 1px #000);
+  }
+
+  .shadow-text-white {
+    filter: drop-shadow(2px 2px 0px #fff);
   }
 
   .container-logo {
@@ -66,7 +64,20 @@
     clip-path: polygon(0 0, 40% 0, 80% 100%, 0 100%);
   }
 
-/*
+  .icon-home {
+    --animate-duration: 8s;
+  }
+
+  .button-defeat {
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 4px 12px;
+    border-radius: 20px;
+  }
+
+  /*
   .custom-shape-divider-bottom-1687101961 {
     position: absolute;
     bottom: 0;
@@ -87,14 +98,13 @@
     fill: #ffffff;
   }*/
 
-
   .logo {
     transform: rotate(0deg);
     animation-name: toTurn;
     animation-duration: 50s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
-  } 
+  }
 
   @keyframes toTurn {
     from {
@@ -120,6 +130,199 @@
 
   html::-webkit-scrollbar-track {
     background-color: #00141d;
+  }
+
+  .name-style {
+    --animate-duration: 3s;
+  }
+
+  .glitch {
+    position: relative;
+    font-weight: bold;
+    font-size: 64px;
+    justify-content: center;
+    align-items: center;
+    filter: drop-shadow(1.5px 1.5px 1px #000);
+  }
+  @keyframes noise-anim {
+    0% {
+      clip: rect(51px, 9999px, 55px, 0);
+    }
+    5% {
+      clip: rect(73px, 9999px, 30px, 0);
+    }
+    10% {
+      clip: rect(56px, 9999px, 67px, 0);
+    }
+    15% {
+      clip: rect(2px, 9999px, 9px, 0);
+    }
+    20% {
+      clip: rect(25px, 9999px, 95px, 0);
+    }
+    25% {
+      clip: rect(26px, 9999px, 82px, 0);
+    }
+    30% {
+      clip: rect(52px, 9999px, 12px, 0);
+    }
+    35% {
+      clip: rect(63px, 9999px, 58px, 0);
+    }
+    40% {
+      clip: rect(62px, 9999px, 74px, 0);
+    }
+    45% {
+      clip: rect(99px, 9999px, 66px, 0);
+    }
+    50% {
+      clip: rect(13px, 9999px, 70px, 0);
+    }
+    55% {
+      clip: rect(8px, 9999px, 54px, 0);
+    }
+    60% {
+      clip: rect(37px, 9999px, 36px, 0);
+    }
+    65% {
+      clip: rect(77px, 9999px, 93px, 0);
+    }
+    70% {
+      clip: rect(73px, 9999px, 97px, 0);
+    }
+    75% {
+      clip: rect(75px, 9999px, 30px, 0);
+    }
+    80% {
+      clip: rect(22px, 9999px, 78px, 0);
+    }
+    85% {
+      clip: rect(84px, 9999px, 29px, 0);
+    }
+    90% {
+      clip: rect(67px, 9999px, 9px, 0);
+    }
+    95% {
+      clip: rect(45px, 9999px, 85px, 0);
+    }
+    100% {
+      clip: rect(21px, 9999px, 86px, 0);
+    }
+  }
+  .glitch:after {
+    content: attr(data-text);
+    position: absolute;
+    left: 1px;
+    text-shadow: -2px 0 #b92c2c;
+    top: 0;
+    color: white;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim 6s infinite linear alternate-reverse;
+  }
+  @keyframes noise-anim-2 {
+    0% {
+      clip: rect(56px, 9999px, 91px, 0);
+    }
+    5% {
+      clip: rect(27px, 9999px, 8px, 0);
+    }
+    10% {
+      clip: rect(61px, 9999px, 73px, 0);
+    }
+    15% {
+      clip: rect(47px, 9999px, 9px, 0);
+    }
+    20% {
+      clip: rect(52px, 9999px, 41px, 0);
+    }
+    25% {
+      clip: rect(40px, 9999px, 9px, 0);
+    }
+    30% {
+      clip: rect(88px, 9999px, 69px, 0);
+    }
+    35% {
+      clip: rect(83px, 9999px, 20px, 0);
+    }
+    40% {
+      clip: rect(90px, 9999px, 95px, 0);
+    }
+    45% {
+      clip: rect(29px, 9999px, 35px, 0);
+    }
+    50% {
+      clip: rect(4px, 9999px, 54px, 0);
+    }
+    55% {
+      clip: rect(77px, 9999px, 22px, 0);
+    }
+    60% {
+      clip: rect(57px, 9999px, 78px, 0);
+    }
+    65% {
+      clip: rect(45px, 9999px, 7px, 0);
+    }
+    70% {
+      clip: rect(92px, 9999px, 69px, 0);
+    }
+    75% {
+      clip: rect(31px, 9999px, 47px, 0);
+    }
+    80% {
+      clip: rect(57px, 9999px, 48px, 0);
+    }
+    85% {
+      clip: rect(2px, 9999px, 59px, 0);
+    }
+    90% {
+      clip: rect(86px, 9999px, 86px, 0);
+    }
+    95% {
+      clip: rect(72px, 9999px, 41px, 0);
+    }
+    100% {
+      clip: rect(88px, 9999px, 94px, 0);
+    }
+  }
+  .glitch:before {
+    content: attr(data-text);
+    position: absolute;
+    left: -1px;
+    text-shadow: 2px 0 blue;
+    top: 0;
+    color: white;
+    overflow: hidden;
+    clip: rect(0, 900px, 0, 0);
+    animation: noise-anim-2 6s infinite linear alternate-reverse;
+  }
+
+  .animate-charcter {
+    text-transform: uppercase;
+    background-image: linear-gradient(
+      -225deg,
+      #231557 0%,
+    #44107a 29%,
+    #fff 67%,
+    #231557 100%
+    );
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 3s linear infinite;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+  @keyframes textclip {
+    to {
+      background-position: 200% center;
+    }
   }
 }
 
