@@ -1,11 +1,15 @@
 import React from "react";
 import compass from "../assets/images/compass.png";
-import react from '../assets/images/react.png'
-import javascript from '../assets/images/js.png'
-import typescript from '../assets/images/ts.png'
-import background from '../assets/images/mountain.jpg'
-import git from '../assets/images/git.png'
-import python from '../assets/images/python.png'
+import react from '../assets/images/icons/react.svg';
+import javascript from '../assets/images/icons/js.svg';
+import typescript from '../assets/images/icons/ts.svg';
+import background from '../assets/images/mountain.jpg';
+import git from '../assets/images/icons/git.svg';
+import python from '../assets/images/icons/python.svg';
+import node from '../assets/images/icons/node.svg';
+import angular from '../assets/images/icons/angular.svg';
+import html from '../assets/images/icons/html.svg';
+import css from '../assets/images/icons/css.svg';
 import Image from "next/legacy/image";
 import 'animate.css';
 import { BsLinkedin, BsWhatsapp, BsGithub } from "react-icons/bs";
@@ -54,7 +58,7 @@ export default function Home() {
           </div>
           <div className="w-[50%] relative">
             <div className="w-[660px] h-[660px] absolute bottom-[110px] align-middle flex flex-wrap">
-              {/* <div className="w-[220px] h-[220px] flex justify-start items-start animate-pulse">
+              <div className="w-[220px] h-[220px] flex justify-start items-start animate-pulse">
                 <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
                   <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
@@ -81,24 +85,24 @@ export default function Home() {
               </div>
               <div className="w-[220px] h-[220px] flex justify-end items-start animate-pulse">
               <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
-                  <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
+                  <Image src={angular} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
               </div>
               <div className="w-[220px] h-[220px] flex justify-start items-end animate-pulse">
               <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
-                  <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
+                  <Image src={html} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
               </div>
               <div className="w-[220px] h-[220px] flex justify-start items-center animate-pulse">
               <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
-                  <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
+                  <Image src={css} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
               </div>
               <div className="w-[220px] h-[220px] flex justify-center items-center animate-pulse">
               <div className="border-[#ffffff77] border-[2px] w-[80px] h-[80px] rounded-[10px]">
-                  <Image src={react} alt="" width={80} height={80} className="rounded-[8px]"></Image>
+                  <Image src={node} alt="" width={80} height={80} className="rounded-[8px]"></Image>
                 </div>
-              </div> */}
+              </div>
             </div>
             <div className="absolute bottom-[110px]">
               <Image
